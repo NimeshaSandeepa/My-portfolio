@@ -12,11 +12,16 @@
     background: white;
 }
 
+.hero img{
+    width: 100px; 
+    height: 100px; 
+    margin-left: -35px;
+}
 nav{
     display: flex;
     width: 84%;
     margin: auto;
-    padding: 20px;
+    padding: 20px 0;
     align-items: center;
     justify-content: space-between;
 }
@@ -34,7 +39,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: red;
+    color: rgb(255, 153, 0);
 }
 
 .detail{
@@ -71,7 +76,7 @@ span{
 .images{
     width: 45%;
     height: 80%;
-    position: absolute;
+    position:absolute;
     bottom: 0;
     right: 100%;
 }
@@ -83,4 +88,14 @@ span{
     bottom: 0;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
+}
+
+.image:hover .shape{
+    bottom: 40px;
+
+}
+
+.image:hover .me{
+    left: 45%;
+
 }
