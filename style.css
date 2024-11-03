@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -52,4 +53,13 @@ span{
 
 .detel p{
     color: #555;
+    line-height: 22px;
+
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+>>>>>>> ad7818f0b4ceebb23b6c828320b8f3ac02cd3d5f
