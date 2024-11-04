@@ -1,141 +1,116 @@
-/* Reset Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
+    font-family: Arial, sans-serif;
     color: #333;
 }
 
-/* Navigation Bar */
-nav {
-    position: relative;
-    background-color: #333;
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .logo {
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    transition: all 0.3s;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
 }
 
-/* Menu Toggle for Mobile */
-#menu-toggle {
-    display: none;
+nav ul li a:hover {
+    background: #ff6347;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-}
-
-/* Mobile Menu Styles */
-@media (max-width: 768px) {
-    /* Hide the regular navigation */
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        display: none;
-    }
-
-    /* Show menu when toggle is checked */
-    #menu-toggle:checked + .menu-icon + ul {
-        display: flex;
-    }
-
-    /* Show the hamburger menu icon */
-    .menu-icon {
-        display: block;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-/* Home Page */
-.home {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 50px;
-    color: #fff;
-}
-
-.name-yellow {
-    color: yellow;
-}
-
-.name-black {
-    color: black;
-}
-
-.cv-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: yellow;
-    color: black;
-    text-decoration: none;
-}
-
-/* Other Sections */
-.about, .projects, .contact {
-    padding: 50px;
+.home-background {
+    background: url('back_01.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 1rem;
     text-align: center;
 }
 
-/* Project Cards */
+.intro h1 {
+    font-size: 2.5rem;
+}
+
+.download-cv {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    background: #ff6347;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.download-cv:hover {
+    background: #ff4500;
+}
+
+.about-background {
+    background: url('back_02.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.projects {
+    padding: 2rem;
+    text-align: center;
+}
+
 .project-cards {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
-    gap: 20px;
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    width: 150px;
-    text-align: center;
-    transition: transform 0.3s;
+    width: 200px;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover {
-    transform: scale(1.1);
+.contact-form {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
 }
 
-/* Contact Form */
-form input, form textarea {
+form label, form input, form textarea, form button {
+    display: block;
     width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
+    margin: 0.5rem 0;
 }
