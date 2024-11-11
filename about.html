@@ -1,36 +1,48 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Nimesha Sandeepa</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <a href="#" class="logo">Portfo<span>lio</span></a>
-        <ul class="navlist">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html" class="active">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-        <div class="bx bx-menu" id="menu-icon"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+       <header class="header">
+       <a href="Home.html" class="logo">Nimesha
+       <span>Sandeepa</span></a>
+
+       <i class='bx bx-menu' id="menu-icon"></i>
+
+       <nav class="navbar">
+        <a href="Home.html" class="active">Home</a>
+        <a href="About.html">About Me</a>
+        <a href="services.html">services</a>
+        <a href="projects.html">Projects</a>
+        <a href="Contact.html">Contact</a>
+       </nav>
     </header>
-    
-    <section class="about">
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <p>I'm a passionate Full-Stack Developer with a keen eye for design. With a solid foundation in UI/UX and backend development, I create seamless digital experiences.</p>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/Me.jpg" alt="me"></div>
+                <div class="about-col-2"><h1 class="title">About Me</h1>
+                <p>Hello! I'm Nimesha Sandeepa, a dedicated and passionate software developer with a strong foundation in both front-end and back-end technologies.
+                     I specialize in creating dynamic, user-friendly applications with a focus on clean design and efficient functionality.
+                      My journey into development has been driven by a love for problem-solving and innovation,
+                       whether I'm building a custom application or optimizing existing code. Alongside technical skills in HTML, CSS, 
+                       JavaScript, and Java, I enjoy exploring new technologies and staying updated with industry trends. I'm committed to continuous learning, 
+                       and I’m always excited to bring fresh ideas to life through code.</p>
+                
+                <div class="btn-about">
+                    <a href="contact.html" class="btn">Contact</a>
+                </div>
+            </div>
         </div>
-        <div class="about-img">
-            <img src="images/Me.jpg" alt="About Me">
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Nimesha Sandeepa. All rights reserved.</p>
-    </footer>
-</body>
+    </div>
+
+     
+<script src="script.js"></script>
+    </body>
 </html>
