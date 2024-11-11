@@ -322,6 +322,7 @@
         margin-top: 170px;
         height: 70%;
         margin-left: 50px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         
          
     }
@@ -335,9 +336,21 @@
     background: linear-gradient(to right, #20b1c7,#6c14d0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    }
+    button[type="submit"] {
+        background-color: var(--main-color);
     }
     .about-col-2{
         flex-basis: 60%;
+    }
+    .about-col-2::before {
+        content: "Discover More"; 
+        font-size: 1.2rem;
+        color: var(--main-color);
+        display: block;
+        margin-bottom: 20px;
     }
     .about-col-2 > p{
         font-family: "Domine", serif ;
